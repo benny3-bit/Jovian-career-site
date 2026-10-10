@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<form>
+    <div id="navbar">
+        <img id="logo" alt="Jovian logo"
+            src="https://cdn.prod.website-files.com/657d454352c94f05d5bb02a4/659d245ae063884ef33bd19b_Jovian%20Logo%20Colored.svg"
+            height="70">
+    </div>
+    <img id="banner" src="Banner.jpg" alt="Banner" height="800">
+    <h1>
+        About Jovian
+    </h1>
+
+
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0;">
+                At jovian,we're on a mission to build the world's most highly reputed technical university,and we're
+                building it
+                completely online.We offer several beginner friendly courses that are taken by 300+ registered users,for
+                you to
+                learn and master one skill to be able to solve real world problem and make you job ready and fit for it.
+            </p>
+            <p>
+                We also offer two industry-focused bootcamps that will help you become a full stack web developer or a
+                data scientist and get you ready for your dream job:
+            <ol>
+                <li>
+                    <a href="https://jovian.com/learn/full-stack-web-application-development">
+                        Jovian Full Stack Developer Bootccamp
+                    </a>
+                </li>
+                <li>
+                    <a href="https://jovian.com/learn/zero-to-data-analyst-bootcamp">
+                        Jovian Data Science Bootcamp
+                    </a>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div id="team">
+            <img id="team-image" src="Team.jpg" alt="Team">
+        </div>
+    </div>
+
+
+    <h2>Job Opportunities</h2>
+    <div id="jobs">
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Job title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted On</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>country</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend Developer</td>
+                <td>Fderal university</td>
+                <td>Otuoke</td>
+                <td>120k</td>
+                <td>Mar 10, 2026</td>
+            </tr>
+
+            <tr class="jobs-data-row">
+                <td>Full Stack Developer</td>
+                <td>Feredal University</td>
+                <td>Otuoke</td>
+                <td>160k</td>
+                <td>Feb 11, 2026</td>
+            </tr>
+
+            <tr class="jobs-data-row">
+                <td>Data scientist</td>
+                <td>Tech hub</td>
+                <td>yenagoa</td>
+                <td>180k</td>
+                <td>Sep 22,2026</td>
+            </tr>
+
+            <tr class="jobs-data-row">
+                <td>ML Engineer</td>
+                <td colspan="2">Remote</td>
+                <td>90k</td>
+                <td>Nov 19, 2026</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="application">
+        <h2>Submit Your Application</h2>
+
+        <form id="application form">
+            <div class="form-group">
+                <Label for="name">Full Name</Label><br>
+                <input type="text" id="name" name="Full Name" required placeholder="Benjmain Thomas">
+            </div>
+
+            <div class="form-group">
+                <Label for="email">Email</Label><br>
+                <input type="email" id="email" name="Email Address" required placeholder="benjaminthom18@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <Label for="phone">Phone</Label><br>
+                <input type="phone" id="phone" name="Phone Number" placeholder="09048788859" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">DATE OF BIRTH</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="position">Possition Applied For</label><br>
+                <select id="Position" name="Position Applied" required>
+                    <option value="">Select position</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="full stack">Full Stack Developer</option>
+                    <option value="data scientist">Data scientist</option>
+                    <option value="ml engineer">ML Engineer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume</label><br>
+                <input type="file" id="resume" name="resume" accept="pdf, .doc, .docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coverletter">Cover Letter</label>
+                <textarea id="coverletter" name="coverletter" rows="5"
+                    placeholder="Explain what makes you suitable for the job.."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+
+                    I agree the terms and condition
+                </label>
+            </div>
+
+            <div class="form-group">
+                <input type=" submit" value="Submit Application">
+            </div>
+        </form>
+
+
+        <div id="footer">
+            <ul id="footer-links">
+                <li>
+                    <a href="https://jovian.com/learn" target="_blank">
+                        Courses
+                    </a>
+                </li>
+                <li>
+                    <a href="https://jovian.com/learn" target="_blank">
+                        Programs
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtube.com/@jovianhq">
+                        Youtube
+                    </a>
+                </li>
+            </ul>
+            <span class="copyright">© 2026, Jovian</span>
+        </div>
+        </body>
+
+</html>
